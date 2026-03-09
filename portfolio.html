@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEST - 포트폴리오</title>
+  <meta name="description" content="NEST 인테리어 포트폴리오 - 자연친화적인 공간 디자인">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Noto+Sans+KR:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar--dark" id="navbar">
+    <div class="nav-container container flex-between">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-text">NEST</span>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#services" class="nav-link">Services</a></li>
+        <li><a href="index.html#portfolio" class="nav-link active">Portfolio</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="index.html#contact" class="btn-primary nav-cta hide-mobile">문의하기</a>
+      <button class="hamburger hide-desktop" id="hamburger" aria-label="메뉴 열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Project Hero -->
+  <section class="project-hero" id="projectHero">
+    <div class="project-hero-bg">
+      <img src="" alt="" id="projectHeroImg">
+    </div>
+    <div class="project-hero-overlay"></div>
+    <div class="project-hero-content">
+      <span class="project-category" id="projectCategory"></span>
+      <h1 class="project-title" id="projectTitle"></h1>
+      <p class="project-location" id="projectLocation"></p>
+    </div>
+  </section>
+
+  <!-- Project Detail -->
+  <section class="project-detail">
+    <div class="container">
+      <div class="project-info-grid">
+        <!-- Left: Description -->
+        <div class="project-description">
+          <h2>프로젝트 소개</h2>
+          <p id="projectDescription"></p>
+
+          <div class="project-concept">
+            <h3>디자인 콘셉트</h3>
+            <p id="projectConcept"></p>
+          </div>
+
+          <div class="project-highlights">
+            <h3>주요 특징</h3>
+            <ul id="projectHighlights"></ul>
+          </div>
+
+          <div class="project-materials">
+            <h3>사용 자재</h3>
+            <div class="materials-tags" id="projectMaterials"></div>
+          </div>
+        </div>
+
+        <!-- Right: Info Box -->
+        <div class="project-info-box">
+          <h3>프로젝트 정보</h3>
+          <div class="info-row">
+            <span class="info-label">카테고리</span>
+            <span class="info-value" id="infoCategory"></span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">위치</span>
+            <span class="info-value" id="infoLocation"></span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">면적</span>
+            <span class="info-value" id="infoArea"></span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">기간</span>
+            <span class="info-value" id="infoDuration"></span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">완성일</span>
+            <span class="info-value" id="infoDate"></span>
+          </div>
+          <div class="info-colors">
+            <span class="info-label">컬러 팔레트</span>
+            <div class="color-swatches" id="infoColors"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="project-gallery">
+    <div class="container">
+      <h2 class="text-center">갤러리</h2>
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </div>
+  </section>
+
+  <!-- Before/After -->
+  <section class="before-after">
+    <div class="container">
+      <h2 class="text-center">Before &amp; After</h2>
+      <div class="ba-slider" id="baSlider">
+        <div class="ba-image ba-before">
+          <img src="" alt="Before" id="beforeImg">
+          <span class="ba-label">Before</span>
+        </div>
+        <div class="ba-image ba-after">
+          <img src="" alt="After" id="afterImg">
+          <span class="ba-label">After</span>
+        </div>
+        <div class="ba-handle" id="baHandle">
+          <div class="ba-handle-line"></div>
+          <div class="ba-handle-circle">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M8 5l-5 7 5 7M16 5l5 7-5 7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="ba-handle-line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Navigation -->
+  <section class="project-nav">
+    <div class="container">
+      <div class="project-nav-grid">
+        <a href="#" class="project-nav-item project-nav-prev" id="prevProject">
+          <span class="nav-direction">이전 프로젝트</span>
+          <span class="nav-project-title" id="prevTitle"></span>
+        </a>
+        <a href="index.html#portfolio" class="project-nav-all">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <rect x="3" y="3" width="7" height="7" stroke="currentColor" stroke-width="2"/>
+            <rect x="14" y="3" width="7" height="7" stroke="currentColor" stroke-width="2"/>
+            <rect x="3" y="14" width="7" height="7" stroke="currentColor" stroke-width="2"/>
+            <rect x="14" y="14" width="7" height="7" stroke="currentColor" stroke-width="2"/>
+          </svg>
+          <span>전체 보기</span>
+        </a>
+        <a href="#" class="project-nav-item project-nav-next" id="nextProject">
+          <span class="nav-direction">다음 프로젝트</span>
+          <span class="nav-project-title" id="nextTitle"></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container text-center">
+      <h2>이런 공간을 원하시나요?</h2>
+      <p>NEST와 함께 꿈꾸는 공간을 현실로 만들어보세요.</p>
+      <a href="index.html#contact" class="btn-primary btn-lg">무료 상담 신청</a>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="닫기">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M6 6l12 12M18 6L6 18" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="이전">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M15 6l-6 6 6 6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="다음">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M9 6l6 6-6 6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <div class="lightbox-content">
+      <img src="" alt="" id="lightboxImg">
+    </div>
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top grid-3">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <span class="logo-text">NEST</span>
+          </a>
+          <p class="footer-desc">자연을 존중하며 따뜻한 감성을 담은 인테리어를 전문으로 합니다.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <rect x="2" y="2" width="16" height="16" rx="5" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="14.5" cy="5.5" r="1" fill="currentColor"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="KakaoTalk">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 3C5.58 3 2 5.94 2 9.5c0 2.27 1.49 4.27 3.74 5.41l-.96 3.55a.3.3 0 00.46.33L9 16.15c.33.03.66.05 1 .05 4.42 0 8-2.94 8-6.7S14.42 3 10 3z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4 class="footer-heading">바로가기</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4 class="footer-heading">연락처</h4>
+          <ul>
+            <li>info@nesthouse.com</li>
+            <li>+82-10-XXXX-XXXX</li>
+            <li>서울시 강남구</li>
+            <li>평일 09:00 - 18:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 NEST Interior. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+  <script src="js/portfolio.js"></script>
+</body>
+</html>

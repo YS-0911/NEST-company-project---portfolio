@@ -1,0 +1,522 @@
+/* ============================================
+   NEST 인테리어 회사 웹사이트
+   CSS 변수 설정 (colors, fonts, spacing)
+   ============================================ */
+
+:root {
+  /* ===== 색상 변수 (Colors) ===== */
+  
+  /* Primary Colors */
+  --color-primary: #2d5f3f;           /* 진초록 (포인트) */
+  --color-primary-light: #4a7d5f;     /* 밝은 초록 (호버) */
+  --color-primary-dark: #1f4530;      /* 어두운 초록 */
+  
+  /* Base Colors */
+  --color-base: #c4a89b;              /* 따뜻한 베이지 */
+  --color-secondary: #a8b8a8;         /* 세이지 그린 */
+  --color-accent: #d4a574;            /* 따뜻한 베이지-브라운 */
+  
+  /* Neutral Colors */
+  --color-dark: #3d2f26;              /* 어두운 갈색 (텍스트) */
+  --color-dark-bg: #2d2420;           /* 더 어두운 갈색 (Footer) */
+  --color-light: #f5f3f0;             /* 오프화이트 (배경) */
+  --color-white: #ffffff;             /* 흰색 */
+  --color-gray: #888888;              /* 회색 (보조) */
+  --color-gray-light: #e8e8e8;        /* 밝은 회색 */
+  
+  /* Semantic Colors */
+  --color-text-primary: #3d2f26;      /* 주요 텍스트 */
+  --color-text-secondary: #888888;    /* 보조 텍스트 */
+  --color-border: #ddd8d3;            /* 테두리 */
+  --color-bg-light: #f5f3f0;          /* 라이트 배경 */
+  --color-bg-section: #ffffff;        /* 섹션 배경 */
+  
+  /* ===== 폰트 변수 (Typography) ===== */
+  
+  /* Font Families */
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Noto Sans KR', sans-serif;
+  --font-accent: 'Playfair Display', serif;
+  
+  /* Font Weights */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  
+  /* Font Sizes - Desktop (1024px+) */
+  --fs-h1: 42px;
+  --fs-h2: 32px;
+  --fs-h3: 26px;
+  --fs-h4: 22px;
+  --fs-body: 18px;
+  --fs-body-small: 16px;
+  --fs-label: 14px;
+  --fs-caption: 12px;
+  
+  /* Line Heights */
+  --lh-heading: 1.3;
+  --lh-body: 1.6;
+  --lh-tight: 1.2;
+  
+  /* Letter Spacing */
+  --ls-heading: -0.5px;
+  --ls-body: 0px;
+  --ls-wide: 0.5px;
+  
+  /* ===== 간격 변수 (Spacing) ===== */
+  
+  /* Padding & Margin (Desktop) */
+  --spacing-xs: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 20px;
+  --spacing-lg: 30px;
+  --spacing-xl: 40px;
+  --spacing-2xl: 60px;
+  --spacing-3xl: 100px;
+  
+  /* Section Padding */
+  --section-padding-top: 100px;
+  --section-padding-bottom: 100px;
+  --section-padding-horizontal: 60px;
+  
+  /* ===== 기타 변수 (Others) ===== */
+  
+  /* Border Radius */
+  --br-small: 4px;
+  --br-medium: 8px;
+  --br-large: 12px;
+  --br-xlarge: 16px;
+  --br-round: 50%;
+  
+  /* Box Shadow */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.15);
+  --shadow-xl: 0 20px 48px rgba(0, 0, 0, 0.2);
+  
+  /* Transitions & Animations */
+  --transition-fast: 0.2s ease-in-out;
+  --transition-normal: 0.3s ease-in-out;
+  --transition-slow: 0.5s ease-in-out;
+  --transition-slowest: 0.8s ease-in-out;
+  
+  /* Z-index */
+  --z-base: 0;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-fixed: 300;
+  --z-modal: 400;
+  --z-tooltip: 500;
+  
+  /* ===== 반응형 - 태블릿 (768px ~ 1024px) ===== */
+}
+
+@media (max-width: 1024px) {
+  :root {
+    /* Font Sizes - Tablet */
+    --fs-h1: 32px;
+    --fs-h2: 26px;
+    --fs-h3: 22px;
+    --fs-h4: 18px;
+    --fs-body: 16px;
+    
+    /* Spacing - Tablet */
+    --section-padding-top: 80px;
+    --section-padding-bottom: 80px;
+    --section-padding-horizontal: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    /* Font Sizes - Mobile */
+    --fs-h1: 24px;
+    --fs-h2: 20px;
+    --fs-h3: 18px;
+    --fs-h4: 16px;
+    --fs-body: 14px;
+    --fs-label: 13px;
+    
+    /* Spacing - Mobile */
+    --spacing-lg: 20px;
+    --spacing-xl: 30px;
+    --spacing-2xl: 40px;
+    --spacing-3xl: 60px;
+    
+    /* Section Padding - Mobile */
+    --section-padding-top: 60px;
+    --section-padding-bottom: 60px;
+    --section-padding-horizontal: 20px;
+  }
+}
+
+/* ============================================
+   기본 스타일 (Base Styles)
+   ============================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-light);
+  overflow-x: hidden;
+}
+
+/* ===== 제목 스타일 ===== */
+
+h1 {
+  font-family: var(--font-heading);
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-heading);
+  letter-spacing: var(--ls-heading);
+  color: var(--color-text-primary);
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-heading);
+  letter-spacing: var(--ls-heading);
+  color: var(--color-text-primary);
+}
+
+h3 {
+  font-family: var(--font-heading);
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-heading);
+  letter-spacing: var(--ls-heading);
+  color: var(--color-text-primary);
+}
+
+h4 {
+  font-family: var(--font-heading);
+  font-size: var(--fs-h4);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-heading);
+  color: var(--color-text-primary);
+}
+
+/* ===== 단락 스타일 ===== */
+
+p {
+  font-size: var(--fs-body-small);
+  line-height: var(--lh-body);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-md);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+small {
+  font-size: var(--fs-label);
+  color: var(--color-text-secondary);
+}
+
+/* ===== 링크 스타일 ===== */
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-primary-light);
+}
+
+/* ===== 버튼 스타일 ===== */
+
+button,
+.btn {
+  font-family: var(--font-heading);
+  font-size: var(--fs-body-small);
+  font-weight: var(--fw-semibold);
+  padding: var(--spacing-md) var(--spacing-lg);
+  border: none;
+  border-radius: var(--br-medium);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  letter-spacing: var(--ls-wide);
+  text-transform: capitalize;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Primary Button */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: var(--color-primary-light);
+  box-shadow: var(--shadow-md);
+}
+
+/* Secondary Button */
+.btn-secondary {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: #c69563;
+  box-shadow: var(--shadow-md);
+}
+
+/* Outline Button */
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn-outline:hover:not(:disabled) {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+/* ===== 이미지 스타일 ===== */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== 리스트 스타일 ===== */
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* ===== 입력 필드 ===== */
+
+input,
+textarea,
+select {
+  font-family: var(--font-body);
+  font-size: var(--fs-body-small);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--br-medium);
+  transition: border-color var(--transition-fast);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(45, 95, 63, 0.1);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* ===== 컨테이너 ===== */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--section-padding-horizontal);
+}
+
+/* ===== 섹션 ===== */
+
+section {
+  padding: var(--section-padding-top) 0 var(--section-padding-bottom) 0;
+}
+
+/* ===== Utility Classes ===== */
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mt-1 { margin-top: var(--spacing-xs); }
+.mt-2 { margin-top: var(--spacing-sm); }
+.mt-3 { margin-top: var(--spacing-md); }
+.mt-4 { margin-top: var(--spacing-lg); }
+.mt-5 { margin-top: var(--spacing-xl); }
+.mt-6 { margin-top: var(--spacing-2xl); }
+
+.mb-1 { margin-bottom: var(--spacing-xs); }
+.mb-2 { margin-bottom: var(--spacing-sm); }
+.mb-3 { margin-bottom: var(--spacing-md); }
+.mb-4 { margin-bottom: var(--spacing-lg); }
+.mb-5 { margin-bottom: var(--spacing-xl); }
+.mb-6 { margin-bottom: var(--spacing-2xl); }
+
+.pt-1 { padding-top: var(--spacing-xs); }
+.pt-2 { padding-top: var(--spacing-sm); }
+.pt-3 { padding-top: var(--spacing-md); }
+.pt-4 { padding-top: var(--spacing-lg); }
+.pt-5 { padding-top: var(--spacing-xl); }
+.pt-6 { padding-top: var(--spacing-2xl); }
+
+.pb-1 { padding-bottom: var(--spacing-xs); }
+.pb-2 { padding-bottom: var(--spacing-sm); }
+.pb-3 { padding-bottom: var(--spacing-md); }
+.pb-4 { padding-bottom: var(--spacing-lg); }
+.pb-5 { padding-bottom: var(--spacing-xl); }
+.pb-6 { padding-bottom: var(--spacing-2xl); }
+
+/* ===== Display & Visibility ===== */
+
+.hidden {
+  display: none !important;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+/* 모바일에서만 숨기기 */
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+/* 데스크톱에서만 숨기기 */
+@media (min-width: 769px) {
+  .hide-desktop {
+    display: none !important;
+  }
+}
+
+/* ===== Flexbox Utilities ===== */
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+/* ===== Grid Utilities ===== */
+
+.grid {
+  display: grid;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-lg);
+}
+
+@media (max-width: 1024px) {
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== 기타 유틸리티 ===== */
+
+.gap-1 { gap: var(--spacing-xs); }
+.gap-2 { gap: var(--spacing-sm); }
+.gap-3 { gap: var(--spacing-md); }
+.gap-4 { gap: var(--spacing-lg); }
+.gap-5 { gap: var(--spacing-xl); }
+.gap-6 { gap: var(--spacing-2xl); }
+
+.opacity-50 { opacity: 0.5; }
+.opacity-75 { opacity: 0.75; }
+
+/* 스크롤바 스타일 (Webkit 브라우저) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-secondary);
+  border-radius: var(--br-medium);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}

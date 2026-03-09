@@ -1,0 +1,190 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "강남 오피스 리노베이션",
+      "category": "상업공간",
+      "location": "서울, 강남구",
+      "completedDate": "2024.03.15",
+      "shortDescription": "현대적이면서도 따뜻한 감성을 담은 업무 공간",
+      "fullDescription": "클라이언트의 요구에 맞춘 따뜻하고 자연친화적인 오피스 공간을 설계했습니다. 원목과 따뜻한 조명을 활용하여 업무 효율성과 편안함을 동시에 충족시켰습니다.",
+      "concept": "자연과의 조화, 편안함, 생산성 극대화",
+      "materials": [
+        "원목 아카시아",
+        "화이트 페인트",
+        "따뜻한 LED 조명",
+        "천연석 마감재"
+      ],
+      "colors": [
+        {
+          "name": "Forest Green",
+          "code": "#2d5f3f"
+        },
+        {
+          "name": "Warm Beige",
+          "code": "#c4a89b"
+        },
+        {
+          "name": "Off White",
+          "code": "#f5f3f0"
+        }
+      ],
+      "duration": "3개월",
+      "durationDays": 90,
+      "area": "150m²",
+      "budget": "요청시 협의",
+      "clientType": "IT 기업",
+      "images": [
+        {
+          "url": "images/portfolio/project1-1.png",
+          "title": "사무실 메인 공간",
+          "description": "따뜻한 조명과 원목이 조화를 이룬 업무 공간"
+        },
+        {
+          "url": "images/portfolio/project1-2.png",
+          "title": "회의실",
+          "description": "집중력 높은 미팅 공간"
+        },
+        {
+          "url": "images/portfolio/project1-3.png",
+          "title": "라운지 공간",
+          "description": "휴식과 소통을 위한 편안한 공간"
+        },
+        {
+          "url": "images/portfolio/project1-4.png",
+          "title": "세부 마감",
+          "description": "정교한 자재 활용"
+        }
+      ],
+      "beforeImage": "images/portfolio/project1-before.png",
+      "afterImage": "images/portfolio/project1-after.png",
+      "highlights": [
+        "오픈 플로어 플랜으로 소통 증대",
+        "자연채광 극대화",
+        "친환경 자재 사용",
+        "스마트 조명 시스템"
+      ],
+      "nextProjectId": 2,
+      "prevProjectId": null
+    },
+    {
+      "id": 2,
+      "title": "청담 주거 공간 설계",
+      "category": "주거공간",
+      "location": "서울, 강남구",
+      "completedDate": "2024.02.20",
+      "shortDescription": "40대 부부의 라이프스타일을 반영한 따뜻한 집",
+      "fullDescription": "40대 부부를 위한 따뜻함이 묻어나는 아파트 인테리어입니다. 자연친화적인 소재와 감성적인 색상으로 편안하고 세련된 거주 공간을 완성했습니다.",
+      "concept": "따뜻한 감성, 자연소재, 편안함, 프라이버시",
+      "materials": [
+        "아카시아 목재",
+        "천연 섬유 원단",
+        "생태 페인트",
+        "관엽식물"
+      ],
+      "colors": [
+        {
+          "name": "Sage Green",
+          "code": "#a8b8a8"
+        },
+        {
+          "name": "Warm Brown",
+          "code": "#d4a574"
+        },
+        {
+          "name": "Beige",
+          "code": "#c4a89b"
+        }
+      ],
+      "duration": "2개월",
+      "durationDays": 60,
+      "area": "85m²",
+      "budget": "요청시 협의",
+      "clientType": "개인 (부부)",
+      "images": [
+        {
+          "url": "images/portfolio/project2-1.png",
+          "title": "거실",
+          "description": "자연스러운 색감이 돋보이는 거실"
+        },
+        {
+          "url": "images/portfolio/project2-2.png",
+          "title": "주방",
+          "description": "기능성과 감성을 갖춘 주방 공간"
+        },
+        {
+          "url": "images/portfolio/project2-3.png",
+          "title": "침실",
+          "description": "휴식을 위한 고요한 침실"
+        }
+      ],
+      "beforeImage": "images/portfolio/project2-before.png",
+      "afterImage": "images/portfolio/project2-after.png",
+      "highlights": [
+        "오픈 플로어 플랜",
+        "수납 극대화",
+        "자연채광 활용",
+        "온라인 갤러리"
+      ],
+      "nextProjectId": 3,
+      "prevProjectId": 1
+    },
+    {
+      "id": 3,
+      "title": "카페 공간 재구성",
+      "category": "상업공간",
+      "location": "서울, 홍대",
+      "completedDate": "2024.01.10",
+      "shortDescription": "클래식한 감성을 살린 힐링 카페",
+      "fullDescription": "클래식한 카페의 따뜻한 감성을 살린 공간 재구성 프로젝트입니다. 자연친화적인 소재와 아늑한 조명으로 고객들이 편안함을 느낄 수 있는 카페를 만들었습니다.",
+      "concept": "자연친화, 아늑함, 카페 감성, 휴식",
+      "materials": [
+        "원목 테이블",
+        "천연 조명",
+        "관엽식물",
+        "친환경 페인트"
+      ],
+      "colors": [
+        {
+          "name": "Dark Brown",
+          "code": "#3d2f26"
+        },
+        {
+          "name": "Warm Beige",
+          "code": "#c4a89b"
+        },
+        {
+          "name": "Off White",
+          "code": "#f5f3f0"
+        }
+      ],
+      "duration": "1개월",
+      "durationDays": 30,
+      "area": "60m²",
+      "budget": "요청시 협의",
+      "clientType": "카페",
+      "images": [
+        {
+          "url": "images/portfolio/project3-1.png",
+          "title": "카페 입구",
+          "description": "따뜻한 분위기의 카페 입구"
+        },
+        {
+          "url": "images/portfolio/project3-2.png",
+          "title": "테이블 존",
+          "description": "편안한 좌석 배치"
+        }
+      ],
+      "beforeImage": "images/portfolio/project3-before.png",
+      "afterImage": "images/portfolio/project3-after.png",
+      "highlights": [
+        "고객 동선 최적화",
+        "따뜻한 조명 연출",
+        "바리스타 작업 공간 확대",
+        "자연요소 통합"
+      ],
+      "nextProjectId": null,
+      "prevProjectId": 2
+    }
+  ]
+}
